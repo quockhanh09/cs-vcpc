@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        .header {
+            background: #4B4844;
+            border-radius: 40px;
+            margin: 16px auto;
+            max-width: 1300px;
+            padding: 8px 32px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            height: 60px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: 32px;
+        }
+
+        .icon-global {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
+        .navmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            min-width: 700px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        /* HERO */
+        .hero {
+            margin: 0;
+            padding: 0;
+            background-image: url("herobanner-1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 500px;
+            max-height: 70vh;
+            width: 100vw;
+            margin-top: 30px;
+        }
+
+        .hero-overlay {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ----------------------------- */
+        /* FOOTER CSS (ĐẦY ĐỦ & TÁCH RIÊNG) */
+        /* ----------------------------- */
+
+        footer {
+            width: 100%;
+            background: linear-gradient(180deg,
+                    #FFFAF2 0%,
+                    #D0D3DC 15%,
+                    #A3ADC7 27%,
+                    #6479A9 43%,
+                    #345092 62%,
+                    #253A6A 80%,
+                    #182544 100%);
+            color: #fff;
+            padding: 0;
+            margin-top: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        .footer-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+            margin-right: 12px;
+            /* ép sát trái */
+        }
+
+        .footer-container {
+            font-family: Lora, serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 0 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        /* LEFT */
+        .footer-left {
+            flex: 1.5;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-left img {
+            height: 80px;
+            width: auto;
+        }
+
+        /* CENTER */
+        .footer-links {
+            flex: 1;
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-family: Lora, serif;
+            margin-left: 500px;
+        }
+
+        /* RIGHT */
+        .footer-quick {
+            flex: 1;
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            gap: 6px;
+            font-family: Lora, serif;
+        }
+
+        /* FOOTER TITLES */
+        .footer-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .footer-item {
+            font-size: 15px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        /* SOCIAL ICONS */
+        .footer-social {
+            display: flex;
+            gap: 18px;
+            margin-top: 40px;
+            justify-content: flex-end;
+        }
+
+        .footer-social img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <section id="header" class="header">
+        <img src="Logo-name.png" alt="Logo" class="header-logo" />
+        <nav id="navmenu" class="navmenu">
+            <ul></ul>
+        </nav>
+        <div class="header-right">
+            <img src="icon.svg" alt="Globe" class="icon-global" />
+        </div>
+    </section>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="footerI.png" alt="VCPC" class="footer-logo">
+
+                <div style="font-size:16px; font-weight:400;">
+                    Số 33 Ngõ 294/2 Kim Mã, Phường Ngọc Hà, Thành phố Hà Nội.<br />
+                    MST: 0110541851<br />
+                    Điện thoại:<br />
+                    Email:<br />
+                    Đại diện pháp luật: Nguyễn Văn Cương (Mr.)
+                </div>
+
+                <div style="color:#B6C0D2; font-size:14px;">
+                    Bản quyền thuộc về VCPC ©
+                </div>
+            </div>
+
+            <!-- CENTER -->
+            <div class="footer-links">
+                <div class="footer-title">TRANG CHỦ</div>
+                <div class="footer-item">Trang chủ</div>
+                <div class="footer-item">Tin tức & Sự kiện</div>
+                <div class="footer-item">Công bố bản quyền</div>
+                <div class="footer-item">Dịch vụ bản quyền</div>
+                <div class="footer-item">Hỗ trợ</div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-quick">
+                <div class="footer-title">TRUY CẬP NHANH</div>
+                <div class="footer-item">Đăng ký bản quyền</div>
+                <div class="footer-item">Thông tin bản quyền</div>
+                <div class="footer-item">Văn bản pháp luật</div>
+                <div class="footer-item">Các loại biểu mẫu</div>
+
+                <div class="footer-social">
+                    <a href="#"><img src="Facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="Youtube.svg" alt="YouTube" /></a>
+                    <a href="#"><img src="Linkedin.svg" alt="LinkedIn" /></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
